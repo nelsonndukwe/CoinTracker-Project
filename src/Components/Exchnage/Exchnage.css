@@ -1,0 +1,47 @@
+.exchange__container{
+    background: var(--main-color)
+}
+
+.exchange__main h1{
+    font-size: 2rem;
+    font-weight: var(--font-semibold);
+    line-height: 2;
+    color: var(--title-color);
+}
+
+.exchange__main h4{
+    font-weight: var(--font-medium);
+    font-size: 1.1rem;
+    color: #5D687E;
+}
+
+.exchange__main h4 span{
+    text-decoration: underline;
+}
+
+.filter__options{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: flex-start;
+    gap: 2rem;
+    
+
+}
+
+.filter__options span{
+    padding: 0.8rem;
+    box-shadow: var(--shadow);
+    background: var(--container-color);
+    border-radius: 1rem;
+    font-weight: var(--font-semibold);
+    color: #5D687E;
+
+
+}
+
+.filter__options span:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+    color: var(--first-color);
+}
+

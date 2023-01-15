@@ -68,3 +68,19 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+const [coins, setCoins] = useState([])
+  const [search, setSearch] = useState("")
+
+  useEffect(() => {
+    axios.get('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false')
+      .then(res => {
+        setCoins(res.data);
+        console.log(res.data);
+      }).catch(error => console.log("yo erro"))
+  }, []);
+
+  // const {active_cryptocurrencies, total_market_cap, market_cap_change_percentage_24h_usd, total_volume, market_cap_percentage{btc},
+    //  } = filteredStats
