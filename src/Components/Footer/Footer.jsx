@@ -9,7 +9,7 @@ const Footer = () => {
     <section id='footer' className='container'>
       <div className='footer__conatiner'>
         <div className='footer__right-container'>
-          <h1>CoinTracker</h1>
+          <h1><a href='#' >CoinTracker</a></h1>
           <h3>Stay Connected</h3>
         </div>
 

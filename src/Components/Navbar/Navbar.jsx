@@ -16,15 +16,14 @@ const Navbar = () => {
   };
 
   return (
+    <section id='#'>
     <header className='header'>
       <h1>CoinTracker</h1>
       <nav className='nav__main nav' ref={navRef}>
         <Link to='/'>CryptoCurrencies</Link>
         <Link to='/exchange'>Exchange</Link>
         <a href='#footer'>About Us</a>
-
-        <input type='search' />
-
+        
         <span ><BsMoon/></span>
         <button className='nav__btn  nav__close-btn' onClick={showNavbar}>
           <ImCancelCircle />
@@ -37,6 +36,7 @@ const Navbar = () => {
       </button>
 
     </header>
+    </section>
 
   )
 }

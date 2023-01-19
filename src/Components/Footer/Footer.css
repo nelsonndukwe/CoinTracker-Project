@@ -15,7 +15,7 @@
     gap: 2.5rem;
 }
 
-.footer__right-container h1{
+.footer__right-container h1 a{
     font-size: var(--h1-font-size);
     font-weight: var(--font-semibold);
     color: var(--first-color);

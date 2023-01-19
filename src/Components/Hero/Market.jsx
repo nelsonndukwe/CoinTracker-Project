@@ -3,31 +3,31 @@ import "./Hero.css"
 
 const Market = (props) => {
 
-
+    
     return (
         <div className='market__colnatiner'>
 
-            <div className='market__item' >
-                <h1>{props.name}</h1>
-                <h1>{props.title}</h1>
+            {/* <div className='market__item' >
+                <h1>{props.active.toLocaleString()}</h1>
+                <h1># Number of Coins</h1>
             </div>
 
             <div className='market__item'>
-                <h1>Hello</h1>
-                <h1>Hello</h1>
+                <h1>{props.market}</h1>
+                <h1>Active Markets</h1>
             </div>
 
             <div className='market__item'>
-                <h1>Hello</h1>
-                <h1>Hello</h1>
+                <h1>${props.markcap.toLocaleString()}</h1>
+                <h1>Total Market Capitalization</h1>
 
             </div>
 
             <div className='market__item'>
-                <h1>hi</h1>
-                <h1>Hello</h1>
+                <h1>${props.dailyVol.toLocaleString()}</h1>
+                <h1>24h Trading Volume</h1>
 
-            </div>
+            </div> */}
 
         </div>
     )

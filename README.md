@@ -84,3 +84,5 @@ const [coins, setCoins] = useState([])
 
   // const {active_cryptocurrencies, total_market_cap, market_cap_change_percentage_24h_usd, total_volume, market_cap_percentage{btc},
     //  } = filteredStats
+
+     rel="noopener")

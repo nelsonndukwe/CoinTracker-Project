@@ -233,10 +233,11 @@
     display: grid;
     grid-template-columns: repeat(9, 1fr);
     border: 1px solid var(--first-color) ;
-    padding: 2rem;
-    flex: 1;
+    padding: 1rem;
     border-radius: 1rem;
     box-shadow: var(--shadow);
+    place-content: center;
+    place-items:center ;
 
 }
 
@@ -268,4 +269,9 @@
    width: 30%;
    height: 100%;
     
+}
+
+.market__colnatiner{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
 }

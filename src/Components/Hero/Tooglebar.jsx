@@ -19,28 +19,25 @@ const Tooglebar = () => {
 
     const url = "https://api.coingecko.com/api/v3/global"
 
-    const apiFun = (url)=>{
+    const apiFun = (url) => {
         axios.get(url)
             .then(res => {
                 setGlobal(res.data);
-                const global = res.data;
+                console.log(res.data);
             }).catch(error => console.log(error))
-            
-     
+
     }
 
     useEffect(() => {
-        
+
         apiFun(url);
     }, []);
 
-    const {data} = global;
-
-    console.log(global)
-
-    // data.map(({active_cryptocurrencies, total_market_cap, market_cap_change_percentage_24h_usd, total_volume}))
-
-
+    // let myMarks = global.data.markets
+    // let marrkCapChange = global.data.market_cap_change_percentage_24h_usd
+    // let allCryptoNo = global.data.active_cryptocurrencies
+    // let total_market_cap_usd = global.data.total_market_cap.usd
+    // let dailyTradeVol = global.data.total_volume.usd
 
     return (
         <>
@@ -267,10 +264,15 @@ const Tooglebar = () => {
             </div>
 
             <Market
-            name={data.active_cryptocurrencies}
-            title={data.total_market_cap}
+                // active={allCryptoNo}
+                // percentagechange={marrkCapChange}
+                // market={myMarks}
+                // markcap={total_market_cap_usd}
+                // dailyVol={dailyTradeVol}
 
             />
+
+
 
 
 

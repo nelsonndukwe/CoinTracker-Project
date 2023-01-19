@@ -42,6 +42,87 @@
 .filter__options span:hover{
     transform: scale(1.05);
     transition: 0.3s;
-    color: var(--first-color);
+    color: var(--first-color) !important;
+}
+
+
+.exchange__table{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.exchange__table h1{
+    display: flex;
+    justify-content: center;
+    font-size: var(--h3-font-size);
+    color: var(--title-color);
+}
+
+.exchange__container-main{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    border: 1px solid var(--first-color) ;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: var(--shadow);
+    place-content: center;
+    place-items:center ;
+
+
+}
+
+.first__col{
+    text-align: center;
+    font-size: var(--h4-font-size);
+    font-weight: 400;
+}
+
+.exchange__info{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.exchange__info img{
+    width: 30%;
+   height: 100%;
+}
+
+.exchange__name-symbol{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.exchange__container-nft{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    color: var(--title-color);
+    place-content: center;
+    place-items:center ;
+    font-size: 0.8rem !important;
+
+}
+
+.exchange__container-nft-main{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    color: var(--title-color);
+    place-content: center;
+    place-items:center ;
+    font-size: 1rem !important;
+    border: 1px solid var(--first-color) ;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: var(--shadow);
+}
+
+.behaviour:hover {
+    background: #5D687E;
+    transition: 0.3s ease;
 }
 

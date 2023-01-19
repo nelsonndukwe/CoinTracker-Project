@@ -1,21 +1,20 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './Exchnage.css'
 
-const Exchangetitle = () => {
+const Exchangetitle = (props) => {
     return (
         <div className='exchange__container container'>
             <div className='exchange__main'>
-                <h1>Top Cryptocurrency Spot Exchanges
-                </h1>
-                <h4>CoinMarketCap ranks and scores exchanges based on traffic, liquidity, trading volumes, and confidence in the legitimacy of trading volumes reported. <span>Read More</span> </h4>
+                <h1>{props.title}</h1>
+                <h4>{props.desc}</h4>
 
             </div>
 
             <div className='filter__options'>
-                <span>Spot</span>
-                <span>Derivative</span>
-                <span>DEX</span>
-                <span>Lending</span>
+                <span ><Link to="/exchange">{props.spot}</Link></span>
+                <span><Link to="/exchange/derivative">{props.Derivative}</Link></span>
+                <span><Link to="/exchange/nft">{props.Nft}</Link></span>
             </div>
 
 
