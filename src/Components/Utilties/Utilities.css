@@ -1,0 +1,27 @@
+.loading__background img{
+    width: 30%;
+    height: 30%;
+    animation: starger 2.5s infinite  linear;
+
+}
+.loading__background{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 15%;
+
+}
+
+@keyframes starger  {
+
+    from{
+        transform: scale(0.2);
+    }
+
+    to{
+        transform: scale(2);
+    }
+    
+
+    
+}
